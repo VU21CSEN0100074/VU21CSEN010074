@@ -1,0 +1,54 @@
+#include<stdio.h>
+
+int main()
+
+{
+
+	int number1,number2;
+
+	int *pointnumber1,*pointnumber2;	
+
+        int sum,sub,mult;
+
+        float div;   
+
+    printf("Enter number1: ");
+
+    scanf("%d",&number1);
+
+    printf("Enter number2: ");
+
+    scanf("%d",&number2);
+
+    
+
+    pointnumber1=&number1;//pointnumber1 stores address of number1
+
+    pointnumber2=&number2;//pointnumber2 stores address of number2
+
+    
+
+    sum=(*pointnumber1) + (*pointnumber2);
+
+    sub=(*pointnumber1) - (*pointnumber2);
+
+    mult=(*pointnumber1) * (*pointnumber2);
+
+    div=(*pointnumber1) / (*pointnumber2);
+
+    
+
+    printf("sum= %d\n",sum);
+
+    printf("subtraction= %d\n",sub);
+
+    printf("Multiplication= %d\n",mult);
+
+    printf("Division= %f\n",div);
+
+
+
+    return 0;
+
+}
+
