@@ -1,0 +1,25 @@
+#include <stdio.h>
+int odd_or_even(){
+  int s,num1,num2,i,r;
+  printf(" Enter the first and second  number for the range:");
+   scanf("%d %d",&num1,&num2);
+   s=printf("\nDisplay the even numbers between %d and %d are: ",num1,num2);
+   for(i=num1; i<=num2; i++){
+        r=i%2;
+        if(r==0)
+            printf("%d ",i);
+    }
+    printf("\n\nDisplay the odd numbers between %d and %d are: ",num1,num2);
+    for(i=num1; i<=num2; i++){
+        r=i%2;
+        if(r==1)
+            printf("%d ",i);
+    }
+    return s;
+}
+int main(){
+ int y;
+ y=odd_or_even();
+ printf("%d",y);
+ 
+}
