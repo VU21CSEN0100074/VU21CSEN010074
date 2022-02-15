@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+    int a[5],n,m,temp,size;
+    printf("Enter the size of the array:");
+    scanf("%d",&size);
+    printf("Enter the elements of the array:");
+    for(n=0;n<size;n++)
+    {
+        scanf("%d",&a[n]);
+    }
+    for(n=0;n<5;n++)
+    {
+        for(m=n+1;m<5;m++)
+        {
+            if(a[n]<a[m])
+            {
+             temp=a[n];
+             a[n]=a[m];
+             a[m]=temp;
+            }
+        }
+    }
+    printf("The given elements in descending order is:");
+    for(n=0;n<5;n++)
+    {
+        printf("%d",a[n]);
+    }
+    return 0;
+}
+
+
