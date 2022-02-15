@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a[50],i,size,item,loc=0;
+printf("Enter the size of the array:");
+scanf("%d",&size);
+printf("Enter the elements of the array:");
+for(i=0;i<size;i++)
+{
+    scanf("%d",&a[i]);
+}
+
+printf("Input the element you are searching for:");
+scanf("%d",&item);
+printf("Beginning linear search...");
+for(i=0;i<size;i++)
+{
+    if(a[i]==item)
+    {
+        loc=i+1;
+        break;
+    }
+}
+if(loc>0)
+printf("\nSearch successful,element found at position:%d",loc);
+else
+printf("\nelement not found");
+}
+
